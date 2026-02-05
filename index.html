@@ -27,7 +27,7 @@ a{text-decoration:none}
   min-height:100vh;
   background:
     linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
-    url('shop image01.jpeg') center/cover no-repeat;
+    url('event01.jpeg') center/cover no-repeat;
   color:#fff;
   display:flex;
   align-items:center;
@@ -37,7 +37,7 @@ a{text-decoration:none}
 }
 
 .hero h1{
-  font-size:42px;
+  font-size:44px;
   font-weight:700;
 }
 
@@ -49,7 +49,7 @@ a{text-decoration:none}
 .hero .btns a{
   display:inline-block;
   margin:10px;
-  padding:14px 28px;
+  padding:14px 30px;
   border-radius:30px;
   background:#ffb703;
   color:#000;
@@ -87,12 +87,18 @@ h2{
 .product{
   background:#fff;
   padding:15px;
-  border-radius:10px;
-  box-shadow:0 10px 25px rgba(0,0,0,0.08);
+  border-radius:12px;
+  border:2px solid #ffb703;   /* BORDER ADDED */
+  box-shadow:0 6px 15px rgba(0,0,0,0.08);
   font-weight:600;
 }
 
-/* EVENTS HIGHLIGHT */
+.product:hover{
+  transform:translateY(-5px);
+  transition:0.3s ease;
+}
+
+/* HIGHLIGHT */
 .highlight{
   background:#fff3cd;
   border-left:6px solid #ffb703;
@@ -149,16 +155,15 @@ h2{
 <!-- HERO -->
 <div class="hero">
   <div>
-    <img src="logo.jpeg" alt="Ravi Raja Masala Logo"
+    <img src="logo.jpeg"
       style="
-        width:120px;
-        height:120px;
+        width:160px;      /* LOGO SIZE INCREASED */
+        height:160px;
         border-radius:50%;
         background:#fff;
-        padding:10px;
-        margin-bottom:20px;
-      "
-    >
+        padding:12px;
+        margin-bottom:25px;
+      ">
     <h1>Ravi Raja Masala</h1>
     <p>25 Years of Trusted Taste – Since 2000</p>
 
@@ -172,15 +177,35 @@ h2{
   </div>
 </div>
 
-<!-- ABOUT -->
+<!-- ABOUT SHOP FIRST -->
 <section>
-  <h2>Our Story</h2>
+  <h2>Our Shop Journey</h2>
+  <div class="gallery">
+    <img src="shop image01.jpeg">
+    <img src="shop image02.jpeg">
+    <img src="shop image old.jpeg">
+  </div>
   <p class="center">
-    25 Years of Ravi Raja Masala.<br>
-    Since 2000, we’ve been the signature taste of Machilipatnam’s snacks.<br>
-    Same quality, same taste, same secret masala.<br>
-    <b>A tradition in every bite.</b>
+    <b>Our Shop – 2012–2015</b><br>
+    Same taste, same quality, same secret masala since 2000.
   </p>
+</section>
+
+<!-- EVENTS SECOND -->
+<section class="highlight">
+  <h2>Marriage & Party Event Orders — Since 2008</h2>
+  <p class="center">
+    We provide bulk snack items for marriages, parties & special events<br>
+    across India including <b>Delhi, Mumbai & Chennai</b>.
+  </p>
+
+  <div class="gallery">
+    <img src="event01.jpeg">
+    <img src="event02.jpeg">
+    <img src="event03.jpeg">
+    <img src="event04.jpeg">
+    <img src="event05.jpeg">
+  </div>
 </section>
 
 <!-- PRODUCTS -->
@@ -198,37 +223,6 @@ h2{
     <div class="product">Vankaya Perugu Masala</div>
     <div class="product">Bajji Perugu Masala</div>
   </div>
-</section>
-
-<!-- EVENTS -->
-<section class="highlight">
-  <h2>Marriage & Party Events — Since 2008</h2>
-  <p class="center">
-    Bulk snack supply for marriages, parties & special events<br>
-    across India including <b>Delhi, Mumbai & Chennai</b>
-  </p>
-
-  <div class="gallery">
-    <img src="event01.jpeg">
-    <img src="event02.jpeg">
-    <img src="event03.jpeg">
-    <img src="event04.jpeg">
-    <img src="event05.jpeg">
-  </div>
-</section>
-
-<!-- SHOP -->
-<section>
-  <h2>Our Shop Journey</h2>
-  <div class="gallery">
-    <img src="shop image01.jpeg">
-    <img src="shop image02.jpeg">
-    <img src="shop image old.jpeg">
-  </div>
-  <p class="center">
-    <b>Our Shop – 2012–2015</b><br>
-    Same taste, same quality.
-  </p>
 </section>
 
 <!-- CONTACT -->
