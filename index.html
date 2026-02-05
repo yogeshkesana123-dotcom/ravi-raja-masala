@@ -8,19 +8,26 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
-*{margin:0;padding:0;box-sizing:border-box}
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
 body{
   font-family:'Poppins',sans-serif;
   background:#fafafa;
   color:#222;
 }
+
 a{text-decoration:none}
 
-/* HERO */
+/* HERO SECTION */
 .hero{
   min-height:100vh;
-  background:linear-gradient(to right,#000000cc,#000000cc),
-  url('shop image01.jpeg') center/cover no-repeat;
+  background:
+    linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+    url('shop image01.jpeg') center/cover no-repeat;
   color:#fff;
   display:flex;
   align-items:center;
@@ -28,8 +35,17 @@ a{text-decoration:none}
   text-align:center;
   padding:20px;
 }
-.hero h1{font-size:42px;font-weight:700}
-.hero p{margin:15px 0;font-size:18px}
+
+.hero h1{
+  font-size:42px;
+  font-weight:700;
+}
+
+.hero p{
+  margin:15px 0;
+  font-size:18px;
+}
+
 .hero .btns a{
   display:inline-block;
   margin:10px;
@@ -40,17 +56,24 @@ a{text-decoration:none}
   font-weight:600;
 }
 
+.hero .btns a:nth-child(3){
+  background:#E1306C;
+  color:#fff;
+}
+
 /* SECTIONS */
 section{
   max-width:1200px;
   margin:auto;
   padding:70px 20px;
 }
+
 h2{
   text-align:center;
   font-size:32px;
   margin-bottom:25px;
 }
+
 .center{text-align:center}
 
 /* PRODUCTS */
@@ -60,22 +83,22 @@ h2{
   gap:15px;
   text-align:center;
 }
+
 .product{
   background:#fff;
   padding:15px;
   border-radius:10px;
-  box-shadow:0 10px 25px rgba(0,0,0,.08);
+  box-shadow:0 10px 25px rgba(0,0,0,0.08);
   font-weight:600;
 }
 
-/* HIGHLIGHT */
+/* EVENTS HIGHLIGHT */
 .highlight{
   background:#fff3cd;
   border-left:6px solid #ffb703;
   padding:50px 20px;
   margin:40px 0;
 }
-.highlight h2{margin-bottom:15px}
 
 /* GALLERY */
 .gallery{
@@ -83,6 +106,7 @@ h2{
   grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
   gap:15px;
 }
+
 .gallery img{
   width:100%;
   border-radius:12px;
@@ -95,7 +119,11 @@ h2{
   padding:60px 20px;
   text-align:center;
 }
-.contact a{color:#ffb703;font-weight:600}
+
+.contact a{
+  color:#ffb703;
+  font-weight:600;
+}
 
 /* FLOAT BUTTONS */
 .float{
@@ -108,6 +136,7 @@ h2{
   border-radius:50px;
   font-weight:600;
 }
+
 .call{
   bottom:80px;
   background:#0b5ed7;
@@ -120,81 +149,97 @@ h2{
 <!-- HERO -->
 <div class="hero">
   <div>
-    <img src="logo.jpeg" alt="Ravi Raja Masala Logo" style="width:120px;margin-bottom:20px;">
+    <img src="logo.jpeg" alt="Ravi Raja Masala Logo"
+      style="
+        width:120px;
+        height:120px;
+        border-radius:50%;
+        background:#fff;
+        padding:10px;
+        margin-bottom:20px;
+      "
+    >
     <h1>Ravi Raja Masala</h1>
     <p>25 Years of Trusted Taste – Since 2000</p>
+
     <div class="btns">
       <a href="tel:9290737446">Call Now</a>
-      <a href="https://wa.me/919290737446">WhatsApp Order</a>
+      <a href="https://wa.me/919290737446">WhatsApp</a>
+      <a href="https://www.instagram.com/ravirajamashala" target="_blank">
+        Instagram
+      </a>
     </div>
   </div>
 </div>
 
 <!-- ABOUT -->
 <section>
-<h2>Our Story</h2>
-<p class="center">
-25 Years of Ravi Raja Masala.<br>
-Since 2000, we’ve been the signature taste of Machilipatnam’s snacks.<br>
-Same quality, same taste, same secret masala.<br>
-<b>A tradition in every bite.</b>
-</p>
+  <h2>Our Story</h2>
+  <p class="center">
+    25 Years of Ravi Raja Masala.<br>
+    Since 2000, we’ve been the signature taste of Machilipatnam’s snacks.<br>
+    Same quality, same taste, same secret masala.<br>
+    <b>A tradition in every bite.</b>
+  </p>
 </section>
 
 <!-- PRODUCTS -->
 <section>
-<h2>Our Masala Products</h2>
-<div class="products">
-<div class="product">Bajji Masala</div>
-<div class="product">Undala Masala</div>
-<div class="product">Mixer Masala</div>
-<div class="product">Plain Tomato Masala</div>
-<div class="product">Plain Egg Masala</div>
-<div class="product">Plain Vankaya Masala</div>
-<div class="product">Tomato Perugu Masala</div>
-<div class="product">Egg Perugu Masala</div>
-<div class="product">Vankaya Perugu Masala</div>
-<div class="product">Bajji Perugu Masala</div>
-</div>
+  <h2>Our Masala Products</h2>
+  <div class="products">
+    <div class="product">Bajji Masala</div>
+    <div class="product">Undala Masala</div>
+    <div class="product">Mixer Masala</div>
+    <div class="product">Plain Tomato Masala</div>
+    <div class="product">Plain Egg Masala</div>
+    <div class="product">Plain Vankaya Masala</div>
+    <div class="product">Tomato Perugu Masala</div>
+    <div class="product">Egg Perugu Masala</div>
+    <div class="product">Vankaya Perugu Masala</div>
+    <div class="product">Bajji Perugu Masala</div>
+  </div>
 </section>
 
 <!-- EVENTS -->
 <section class="highlight">
-<h2>Marriage & Party Events — Since 2008</h2>
-<p class="center">
-Bulk snack supply for marriages, parties & special events<br>
-across India including <b>Delhi, Mumbai & Chennai</b>
-</p>
+  <h2>Marriage & Party Events — Since 2008</h2>
+  <p class="center">
+    Bulk snack supply for marriages, parties & special events<br>
+    across India including <b>Delhi, Mumbai & Chennai</b>
+  </p>
 
-<div class="gallery">
-<img src="event01.jpeg">
-<img src="event02.jpeg">
-<img src="event03.jpeg">
-<img src="event04.jpeg">
-<img src="event05.jpeg">
-</div>
+  <div class="gallery">
+    <img src="event01.jpeg">
+    <img src="event02.jpeg">
+    <img src="event03.jpeg">
+    <img src="event04.jpeg">
+    <img src="event05.jpeg">
+  </div>
 </section>
 
 <!-- SHOP -->
 <section>
-<h2>Our Shop Journey</h2>
-<div class="gallery">
-<img src="shop image01.jpeg">
-<img src="shop image02.jpeg">
-<img src="shop image old.jpeg">
-</div>
-<p class="center"><b>Our Shop – 2012–2015</b><br>Same taste, same quality.</p>
+  <h2>Our Shop Journey</h2>
+  <div class="gallery">
+    <img src="shop image01.jpeg">
+    <img src="shop image02.jpeg">
+    <img src="shop image old.jpeg">
+  </div>
+  <p class="center">
+    <b>Our Shop – 2012–2015</b><br>
+    Same taste, same quality.
+  </p>
 </section>
 
 <!-- CONTACT -->
 <div class="contact">
-<p>📞 9290737446 | 8688650060</p>
-<p>📍 Revathi Center, Machilipatnam</p>
-<p>
-<a href="https://www.instagram.com/ravirajamashala">
-Instagram: @ravirajamashala
-</a>
-</p>
+  <p>📞 9290737446 | 8688650060</p>
+  <p>📍 Revathi Center, Machilipatnam</p>
+  <p>
+    <a href="https://www.instagram.com/ravirajamashala">
+      Instagram: @ravirajamashala
+    </a>
+  </p>
 </div>
 
 <a class="float call" href="tel:9290737446">Call</a>
