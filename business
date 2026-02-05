@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ravi Raja Masala | Since 2000</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      color: #222;
+    }
+    header {
+      background: #000;
+      color: #fff;
+      text-align: center;
+      padding: 40px 20px;
+    }
+    header h1 {
+      margin: 10px 0;
+      font-size: 32px;
+    }
+    header p {
+      font-size: 18px;
+    }
+    .btns a {
+      display: inline-block;
+      margin: 10px;
+      padding: 12px 20px;
+      background: #25d366;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+    .btns a.call {
+      background: #0b5ed7;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .products ul {
+      list-style: none;
+      padding: 0;
+      columns: 2;
+    }
+    .products li {
+      padding: 8px 0;
+      font-weight: bold;
+    }
+    .highlight {
+      background: #fff3cd;
+      border-left: 6px solid #f0ad4e;
+      padding: 30px;
+      margin: 40px 0;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 8px;
+    }
+    .caption {
+      text-align: center;
+      font-size: 14px;
+      color: #555;
+    }
+    footer {
+      background: #000;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+    .fixed-btn {
+      position: fixed;
+      right: 15px;
+      bottom: 15px;
+      background: #25d366;
+      color: #fff;
+      padding: 12px 18px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .fixed-call {
+      bottom: 70px;
+      background: #0b5ed7;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <!-- Add your logo image here -->
+  <!-- <img src="logo.png" alt="Ravi Raja Masala Logo" width="120"> -->
+  <h1>Ravi Raja Masala</h1>
+  <p>25 Years of Trusted Taste – Since 2000</p>
+  <div class="btns">
+    <a class="call" href="tel:9290737446">Call Now</a>
+    <a href="https://wa.me/919290737446">WhatsApp Order</a>
+  </div>
+</header>
+
+<section>
+  <h2>About Us</h2>
+  <p style="text-align:center;">
+    25 Years of Ravi Raja Masala.<br>
+    Since 2000, we’ve been the signature taste of Machilipatnam’s snacks.<br>
+    Same quality, same taste, and the same secret masala that our people love.<br>
+    A tradition in every bite.
+  </p>
+</section>
+
+<section class="products">
+  <h2>Our Products</h2>
+  <ul>
+    <li>Bajji Masala</li>
+    <li>Undala Masala</li>
+    <li>Mixer Masala</li>
+    <li>Plain Tomato Masala</li>
+    <li>Plain Egg Masala</li>
+    <li>Plain Vankaya Masala</li>
+    <li>Tomato Perugu Masala</li>
+    <li>Egg Perugu Masala</li>
+    <li>Vankaya Perugu Masala</li>
+    <li>Bajji Perugu Masala</li>
+  </ul>
+</section>
+
+<section class="highlight">
+  <h2>Marriage & Party Events — Since 2008</h2>
+  <p style="text-align:center;">
+    We provide bulk snack items for marriages, parties, and special events<br>
+    all over India, including <b>Delhi, Mumbai, and Chennai</b>.
+  </p>
+
+  <div class="gallery">
+    <!-- Add event images in SAME ORDER -->
+    <!-- <img src="event1.jpg"> -->
+    <!-- <img src="event2.jpg"> -->
+    <!-- <img src="event3.jpg"> -->
+    <!-- <img src="event4.jpg"> -->
+  </div>
+</section>
+
+<section>
+  <h2>Our Shop</h2>
+  <div class="gallery">
+    <!-- Current shop images -->
+    <!-- <img src="shop1.jpg"> -->
+    <!-- <img src="shop2.jpg"> -->
+  </div>
+
+  <div style="margin-top:20px;">
+    <!-- Old shop photo -->
+    <!-- <img src="shop-2015.jpg" style="width:100%;max-width:400px;display:block;margin:auto;"> -->
+    <p class="caption">
+      Our Shop – 2015<br>
+      Same taste, same quality, since 2000.
+    </p>
+  </div>
+</section>
+
+<section>
+  <h2>Contact Us</h2>
+  <p style="text-align:center;">
+    📞 9290737446 / 8688650060<br>
+    📍 Revathi Center, Machilipatnam
+  </p>
+  <iframe
+    src="https://maps.google.com/maps?q=Revathi%20Center%20Machilipatnam&t=&z=15&ie=UTF8&iwloc=&output=embed"
+    width="100%" height="300" style="border:0;">
+  </iframe>
+</section>
+
+<footer>
+  <p>
+    Follow us on Instagram:
+    <a href="https://www.instagram.com/ravirajamashala" style="color:#25d366;">
+      @ravirajamashala
+    </a>
+  </p>
+  <p>© Ravi Raja Masala</p>
+</footer>
+
+<a class="fixed-btn fixed-call" href="tel:9290737446">Call</a>
+<a class="fixed-btn" href="https://wa.me/919290737446">WhatsApp</a>
+
+</body>
+</html>
